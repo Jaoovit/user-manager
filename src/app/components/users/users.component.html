@@ -1,0 +1,10 @@
+<h1>Users</h1>
+
+@for(user of users; track user.id) {
+<div>
+  <p>{{ user.id }}. {{ user.name }}</p>
+  <p>{{ user.email }}</p>
+  <p><a href="">view</a></p>
+  <p><a href="">edit</a></p>
+</div>
+}
