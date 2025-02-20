@@ -1,0 +1,21 @@
+$primary-color: gray;
+$secondary-color: whitesmoke;
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+div {
+  display: flex;
+  gap: 2vh;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+  padding: 2vh;
+  background-color: $secondary-color;
+}
