@@ -1,0 +1,18 @@
+@if(user) {
+<h1>{{ user?.id }}. {{ user?.name }}</h1>
+<div>
+  <h2>Contact</h2>
+  <p>Email: {{ user?.email }}</p>
+  <p>Phone: {{ user?.phone }}</p>
+  <p>Website: {{ user?.website }}</p>
+</div>
+<div>
+  <h2>Address</h2>
+  <p>City: {{ user?.address.city }}</p>
+  <p>Zip-code: {{ user?.address.zipcode }}</p>
+</div>
+<a href="/users">back to the users list</a>
+} @else {
+<h1>User not found</h1>
+<a href="/users">back to the users list</a>
+}
