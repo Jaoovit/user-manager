@@ -8,7 +8,7 @@
     <div>
       <a href="user/{{ user.id }}">view</a>
       <a href="">edit</a>
-      <button>delete</button>
+      <button (click)="deleteUser(user.id)">delete</button>
     </div>
   </li>
   }

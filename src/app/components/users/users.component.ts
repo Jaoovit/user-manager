@@ -17,4 +17,10 @@ export class UsersComponent implements OnInit {
       this.users = data;
     });
   }
+
+  deleteUser(id: number): void {
+    this.userService.deleteUser(id).subscribe(() => {
+      this.users = this.users.filter((user) => user.id !== id);
+    });
+  }
 }
