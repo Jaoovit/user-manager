@@ -18,6 +18,14 @@ export class UserServiceService {
     return this.httpClient.get<any[]>(`${this.apiUrl}/${id}`);
   }
 
+  addUser(user: any): Observable<any[]> {
+    return this.httpClient.post<any[]>(this.apiUrl, user);
+  }
+
+  updateUser(user: any, id: number): Observable<any[]> {
+    return this.httpClient.put<any[]>(`${this.apiUrl}/${id}`, user);
+  }
+
   deleteUser(id: number): Observable<any[]> {
     return this.httpClient.delete<any[]>(`${this.apiUrl}/${id}`);
   }
