@@ -13,7 +13,11 @@ export const routes: Routes = [
     component: UserDetailsComponent,
   },
   {
-    path: 'user/add',
+    path: 'users/add',
+    component: UserFormComponent,
+  },
+  {
+    path: 'user/edit/:id',
     component: UserFormComponent,
   },
 ];
